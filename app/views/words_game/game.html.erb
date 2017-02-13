@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="row">
+    <div class= "col-xm-12 col-md-12 col-lg-12">
+      <h3>Here is your grid:</h3>
+      <p><%= @grid %></p>
+
+      <form action="/score">
+        <label form="question">Write here your word</label>
+        <input type="text" class = "form-control" id="word" name="user_word" >
+        <input type="hidden" name = "grid" value = "<%= @grid %>">
+        <input type="hidden" name = "start_time" value = "<%= @start_time.to_f%>">
+        <input type="submit" class ="btn btn-primary" value="Go on!">
+
+      </form>
+    </div>
+  </div>
+</div>
+
